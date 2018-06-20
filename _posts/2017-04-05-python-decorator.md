@@ -55,7 +55,7 @@ if __name__ == '__main__':
 def debug():
     import inspect
     caller_name = inspect.stack()[1][3]
-    print "[DEBUG]: enter {}()".format(caller_name)   
+    print "[DEBUG]: enter {}()".format(caller_name)
 
 def say_hello():
     debug()
@@ -264,6 +264,7 @@ def x(self): ...
 x = property(x)
 ```
 
+`@property`的意义在于把一个方法变成属性调用的,可以增加私有属性的get、set、del访问功能，防止暴露。
 属性有三个装饰器：`setter`, `getter`, `deleter` ，都是在`property()`的基础上做了一些封装，因为`setter`和`deleter`是`property()`的第二和第三个参数，不能直接套用@语法。`getter`装饰器和不带`getter`的属性装饰器效果是一样的，估计只是为了凑数，本身没有任何存在的意义。经过`@property`装饰过的函数返回的不再是一个函数，而是一个`property`对象。
 
 ```python
@@ -273,13 +274,16 @@ x = property(x)
 
 #### @staticmethod，@classmethod
 
-有了`@property`装饰器的了解，这两个装饰器的原理是差不多的。`@staticmethod`返回的是一个`staticmethod`类对象，而`@classmethod`返回的是一个`classmethod`类对象。他们都是调用的是各自的`__init__()`构造函数。
+有了`@property`装饰器的了解，这两个装饰器的原理是差不多的。
+`@staticmethod` 不需要表示自身对象的self和自身类的cls参数，就跟使用函数一样。
+`@classmethod` 也不需要self参数，但第一个参数需要是表示自身类的cls参数。
+`@staticmethod`返回的是一个`staticmethod`类对象，而`@classmethod`返回的是一个`classmethod`类对象。他们都是调用的是各自的`__init__()`构造函数。
 
 ```python
 class classmethod(object):
     """
     classmethod(function) -> method
-    """    
+    """
     def __init__(self, function): # for @classmethod decorator
         pass
     # ...

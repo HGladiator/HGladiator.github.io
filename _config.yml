@@ -7,7 +7,7 @@
 
 # Site settings
 title: 望山跑死马
-# brief-intro: Big Data Dev Engineer
+brief-intro:  Data Excavator
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://HGladiator.github.io" # the base hostname & protocol for your site
 
