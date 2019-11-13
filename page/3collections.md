@@ -10,12 +10,17 @@ type: page
 {:toc}
 
 ## Other blogs
-- [美团点评技术博客](https://tech.meituan.com/)
+- [美团技术博客](https://tech.meituan.com/)
 - [阿里中间件团队博客](http://jm.taobao.org/)
+- [七牛云](https://blog.qiniu.com/archives/category/5)
 - [机器之心](https://zhuanlan.zhihu.com/jiqizhixin)
+- [Uber engineering](https://eng.uber.com/)
+- [Airbnb engineering](https://medium.com/airbnb-engineering)
+- [Twitter engineering](https://blog.twitter.com/engineering/en_us.html)
+- [Markdown开发者JOHN GRUBER](https://daringfireball.net/projects/markdown/basics)
 
 ## 工具
-- [我自己的查询手册](https://github.com/HGladiator/MyCodes/wiki)
+- [整理的查询手册](https://github.com/HGladiator/MyCodes/wiki)
 - [DevDocs combines multiple API documentations](https://devdocs.io/)
 - [在线工具](http://tool.lu/)
 - [一译中文文档](http://python.usyiyi.cn/)
@@ -24,6 +29,7 @@ type: page
 - [有 API 可用的图床 ](https://sm.ms/)
 - [Latex 常见字符](http://mohu.org/info/symbols/symbols.htm)
 - [强大的在线正则匹配，能清楚的区分出贪婪和懒惰正则](https://regex101.com/)
+- [多功能靠谱网络书签](start.me)
 
 ## 编程语言
 - [tiobe编程语言排行](https://www.tiobe.com/tiobe-index/)

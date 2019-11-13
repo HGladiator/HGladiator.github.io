@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 搭建私人GitLab服务器
-categories: 搭建环境
+categories: GitLab
 tags: Git
 excerpt: 薅羊毛拿下的服务器放着吃灰，还不如用来搭建一个私人的GitLab服务器玩玩
 ---
