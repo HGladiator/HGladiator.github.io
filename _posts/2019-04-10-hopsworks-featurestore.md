@@ -2,7 +2,7 @@
 layout: post
 title: Hopsworks系统中的FeatureStore详解
 categories: AI中台
-tags: FeatureStore, AutoML
+tags: FeatureStore  AutoML
 excerpt: 构建成功的AI系统非常困难。在Logical Clocks，我们注意到我们的用户在机器学习的数据工程阶段花费了大量精力。从版本0.8.0开始，Hopsworks提供了世界上第一个开源FeatureStore。FeatureStore是用于机器学习的数据管理层，它允许数据科学家和数据工程师共享和发现特征，随着时间的推移更好地了解特征，并实现机器学习工作流程。
 mathjax: false
 date: 2019-04-10
